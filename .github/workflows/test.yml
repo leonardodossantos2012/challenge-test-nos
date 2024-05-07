@@ -26,14 +26,10 @@ jobs:
 
     - name: ls Tests
       run: ls
-
-  save-reports:
-    needs: test
-    runs-on: ubuntu-latest
-    if: ${{ failure() }}
-    steps:
+    
     - name: Archive Test Reports
       uses: actions/upload-artifact@v2
+      if: ${{ failure() }}
       with:
         name: test-reports
         path: ./reports
