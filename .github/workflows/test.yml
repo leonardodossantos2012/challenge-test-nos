@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Run Tests
-      run: npx test
+      run: npx jest
 
   save-reports:
     needs: test
