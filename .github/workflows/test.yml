@@ -22,10 +22,9 @@ jobs:
       run: npm install
 
     - name: Run Tests
-      run: npx jest
-
-    - name: ls Tests
-      run: ls
+      run: | 
+        export API_URL=${{ secrets.API_URL }}
+        npx jest
     
     - name: Archive Test Reports
       uses: actions/upload-artifact@v2

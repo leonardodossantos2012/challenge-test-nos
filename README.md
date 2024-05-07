@@ -44,9 +44,15 @@ Follow these steps to install and set up the project:
     npm install
     ```
 
-### Usage
+#### Running Tests Locally
 
-Examples and instructions for using the project:
+
+To run tests locally, you need to set the `API_URL` environment variable to specify the base URL of the API. Execute the following command in your terminal:
+
+```bash
+export API_URL=https://gorest.co.in/public/v2
+```
+
 
 - Run tests:
 
