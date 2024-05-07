@@ -27,6 +27,7 @@ jobs:
   save-reports:
     needs: test
     runs-on: ubuntu-latest
+    if: ${{ failure() }}
     steps:
     - name: Archive Test Reports
       uses: actions/upload-artifact@v2
