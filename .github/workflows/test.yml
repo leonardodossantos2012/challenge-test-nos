@@ -24,6 +24,9 @@ jobs:
     - name: Run Tests
       run: npx jest
 
+    - name: ls Tests
+      run: ls
+
   save-reports:
     needs: test
     runs-on: ubuntu-latest
@@ -33,4 +36,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: test-reports
-        path: ./reports/*
+        path: ./reports
