@@ -4,6 +4,10 @@ This project is a demonstration of test automation using Jest to validate an API
 
 ## Table of Contents
 
+- [Test Case Objectives](#test-case-objectives)
+  - [1. JsonSchema Validation](#1-jsonschema-validation)
+  - [2. Validate if All Results Have the Attribute "status" Equals "completed"](#2-validate-if-all-results-have-the-attribute-status-equals-completed)
+  - [3. Validate All Values of the Attribute "due_on"](#3-validate-all-values-of-the-attribute-due_on)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -14,6 +18,27 @@ This project is a demonstration of test automation using Jest to validate an API
   - [3. Seamless Integration with TypeScript](#3-seamless-integration-with-typescript)
   - [4. Enhanced Developer Experience](#4-enhanced-developer-experience)
   - [5. Community Support and Documentation](#5-community-support-and-documentation)
+
+
+
+## Test Case Objectives
+
+In this project, we have implemented three test cases to validate the functionality of the API service:
+
+### 1. JsonSchema Validation
+
+**Objective:** The objective of this test case is to ensure that the response from the API service adheres to the specified JSON schema. By validating the response schema, we verify that the structure of the data returned by the API meets the expected format.
+
+### 2. Validate if All Results Have the Attribute "status" Equals "completed"
+
+**Objective:** This test case aims to verify that all results returned by the API service have the attribute "status" set to "completed". By enforcing this condition, we ensure that only completed tasks are included in the response, maintaining data consistency and accuracy.
+
+### 3. Validate All Values of the Attribute "due_on"
+
+**Objective:** The objective of this test case is to validate all values of the attribute "due_on" in the response. By checking the format and validity of "due_on" values, we ensure that the dates are correctly formatted and comply with any specified requirements or constraints.
+
+These test cases collectively cover various aspects of the API service's functionality, including data structure, attribute values, and overall data integrity.
+
 
 ## Getting Started
 
