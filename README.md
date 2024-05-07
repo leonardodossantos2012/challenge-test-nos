@@ -29,13 +29,13 @@ Follow these steps to install and set up the project:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/test-automation-project.git
+    git clone git@github.com:leonardodossantos2012/challenge-test-nos.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd test-automation-project
+    cd challenge-test-nos
     ```
 
 3. Install dependencies:
@@ -51,7 +51,7 @@ Examples and instructions for using the project:
 - Run tests:
 
     ```bash
-    npm test
+    npx jest
     ```
 
 ## Running Tests in GitHub Actions
@@ -67,17 +67,3 @@ This project uses GitHub Actions to automatically run tests whenever there's a p
    - Save test reports as artifacts (optional).
 
 You can view the workflow and test results in the GitHub Actions tab of your repository.
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
