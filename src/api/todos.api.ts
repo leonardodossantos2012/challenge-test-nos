@@ -8,7 +8,6 @@ interface Todo {
   status: string;
 }
 
-// Define the base URL for different environments
 const BASE_URL = process.env.API_URL;
 
 export async function getTodos(): Promise<Todo[]> {
