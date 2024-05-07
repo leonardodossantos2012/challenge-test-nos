@@ -20,6 +20,7 @@ describe('API Tests', () => {
 
         expect(allCompleted).toBe(true);
     });
+
     it('should validate all values of the attribute "due_on"', async () => {
         const response = await axios.get('https://gorest.co.in/public/v2/todos');
         const todos = response.data;

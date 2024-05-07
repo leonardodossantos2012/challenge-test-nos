@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
     - name: Use Node.js
       uses: actions/setup-node@v2
@@ -21,4 +22,14 @@ jobs:
       run: npm install
 
     - name: Run Tests
-      run: npx jest
+      run: npx test
+
+  save-reports:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Archive Test Reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-reports
+        path: ./reports
