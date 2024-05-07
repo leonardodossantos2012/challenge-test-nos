@@ -7,10 +7,12 @@ module.exports = {
     },
   },
   reporters: [
-    "default",
-    ['jest-html-reporter', {
-      pageTitle: 'Test Report',
-      outputPath: './reports/result.html'
+    'default',
+    ["jest-html-reporters", {
+      "publicPath": "./report",
+      "filename": "result.html",
+      "openReport": false
     }]
-  ]
+
+  ],
 };
