@@ -8,6 +8,10 @@ This project is a demonstration of test automation using Jest to validate an API
   - [1. JsonSchema Validation](#1-jsonschema-validation)
   - [2. Validate if All Results Have the Attribute "status" Equals "completed"](#2-validate-if-all-results-have-the-attribute-status-equals-completed)
   - [3. Validate All Values of the Attribute "due_on"](#3-validate-all-values-of-the-attribute-due_on)
+- [Performance Test](#performance-test)
+  - [Motive for Performance Test](#motive-for-performance-test)
+  - [Justification for Using K6](#justification-for-using-k6
+
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -38,6 +42,32 @@ In this project, we have implemented three test cases to validate the functional
 **Objective:** The objective of this test case is to validate all values of the attribute "due_on" in the response. By checking the format and validity of "due_on" values, we ensure that the dates are correctly formatted and comply with any specified requirements or constraints.
 
 These test cases collectively cover various aspects of the API service's functionality, including data structure, attribute values, and overall data integrity.
+
+## Performance Test
+
+Performance testing is crucial for evaluating the responsiveness, stability, and scalability of an API under various load conditions.
+
+### Motive for Performance Test
+
+1. **Evaluate Scalability:** Performance testing helps assess how well the API scales under increasing loads. By simulating a large number of concurrent users making requests to the API, we can determine whether it can handle the expected volume of traffic without experiencing degradation in performance.
+
+2. **Ensure Responsiveness:** Performance testing allows us to measure response times and throughput under different load conditions. We aim to ensure that the API responds promptly to user requests, maintaining acceptable latency levels even during peak usage periods.
+
+3. **Detect Performance Issues:** Performance testing helps uncover potential performance issues such as slow response times, high latency, or resource exhaustion. By identifying and addressing these issues early on, we can prevent them from impacting user experience and system reliability.
+
+4. **Optimize Resource Utilization:** Understanding resource utilization patterns during load testing enables us to optimize resource allocation and infrastructure provisioning. By efficiently utilizing resources, we can minimize costs and improve the overall efficiency of the API.
+
+### Justification for Using K6
+
+1. **Open Source and Easy to Use:** K6 is an open-source load testing tool known for its simplicity and ease of use. It provides a user-friendly scripting syntax, making it straightforward to create and execute performance tests for the API.
+
+2. **Scalability and Flexibility:** K6 supports distributed load testing, allowing us to simulate thousands of concurrent users and complex scenarios. Its flexible architecture enables us to scale our tests as needed, making it suitable for evaluating the scalability of the API.
+
+3. **Realistic Load Scenarios:** With K6, we can create realistic load scenarios that mimic real-world usage patterns. By simulating various user behaviors and interactions with the API, we can assess its performance under diverse conditions and identify potential performance bottlenecks.
+
+4. **Rich Metrics and Reporting:** K6 provides detailed metrics and insightful reports, allowing us to analyze performance data effectively. It offers comprehensive visualization tools and integration options with monitoring platforms, enabling us to gain valuable insights into the performance of the API and make informed optimization decisions.
+
+By conducting performance testing with K6 for the API "https://gorest.co.in/public/v2/todos", we aim to ensure that the API can handle the expected load, maintain acceptable performance levels, and deliver a responsive and reliable user experience.
 
 
 ## Getting Started
