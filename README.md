@@ -10,7 +10,7 @@ This project is a demonstration of test automation using Jest to validate an API
   - [3. Validate All Values of the Attribute "due_on"](#3-validate-all-values-of-the-attribute-due_on)
 - [Performance Test](#performance-test)
   - [Motive for Performance Test](#motive-for-performance-test)
-  - [Justification for Using K6](#justification-for-using-k6
+  - [Justification for Using K6](#justification-for-using-k6)
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
