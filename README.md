@@ -1,8 +1,6 @@
 # Test Automation Challenge NOS with Jest
 
-This project is a demonstration of test automation using Jest to validate an API service.
-
-## Table of Contents
+## Summary
 
 - [Test Case Objectives](#test-case-objectives)
   - [1. JsonSchema Validation](#1-jsonschema-validation)
